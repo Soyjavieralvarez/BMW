@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: 0;
+  font-family: "source sans pro", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.header {
+  max-width: 100%;
+  background-image: url(/Assets/Imagenes/bmw-header.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_left {
+  width: 60%;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav_left span {
+  margin: 20px;
+  padding: 20px;
+}
+
+.nav_left span a {
+  font-size: 20px;
+  color: white;
+}
+
+.nav_left span a:hover {
+  padding: 20px;
+  background-color: #262626;
+}
+
+.nav_right {
+  margin: 20px;
+  padding: 20px;
+  height: 100%;
+  width: 40%;
+}
+
+.nav_right img {
+  width: 20%;
+  margin-left: 400px;
+}
+
+.header-caption {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 500px;
+  color: white;
+}
+
+.header-caption__h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.header-caption__h3 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.header-caption__button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: rgb(46, 173, 215);
+  width: 10%;
+}
+
+.header-caption__button_p {
+  font-weight: bold;
+  font-size: 20px;
+  color: #262626;
+}
+
+.header-caption__button:hover {
+  background-color: aliceblue;
+}
+
+.model-menu {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  color: #262626;
+  font-size: 25px;
+}
+
+.model-menu_cars {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-menu_cars li {
+  display: flex;
+  font-weight: bold;
+}
+
+.model-menu_cars li a {
+  font-style: none;
+  color: #262626;
+}
+
+.model-menu_cars li a:hover {
+  background-color: #262626;
+  color: white;
+}
+
+.model-cars {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.model-cars__box {
+  width: 20%;
+  height: 45%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.model-cars__model {
+  display: flex;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.model-cars__type {
+  display: flex;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(15, 114, 235);
+}
+
+.model-cars__price {
+  display: flex;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.model-cars__extra {
+  display: flex;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 18px;
+  color: #262626;
+  font-style: none;
+}
+
+.model-cars__extra:hover {
+  display: flex;
+  color: rgb(10, 110, 203);
+}
+
+.information {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.information-box {
+  padding: 20px;
+  width: 15%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.information-box_img {
+  width: 100%;
+}
+
+.information-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #262626;
+  font-style: none;
+}
+
+.information-text p {
+  padding: 10px;
+}
+
+.information-link {
+  font-weight: bold;
+  color: #262626;
+}
+
+.information-link:hover {
+  color: rgb(16, 94, 240);
+}
+
+.latest-releases {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latest-releases-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 25%;
+}
+
+.latest-releases_button {
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #4d4d4d;
+}
+
+.latest-releases_button:hover {
+  background-color: #201e1e;
+}
+
+.button_p {
+  color: white;
+}
+
+.latest-releases_p {
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #e6e6e6;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_rrss {
+  margin-top: 20px;
+  width: 50%;
+  border-bottom: solid 1px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rrss_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.rrss_h4 {
+  /* border: solid 2px yellow; */
+  width: 50%;
+  color: #4d4d4d;
+  font-size: 25px;
+  font-weight: lighter;
+  text-align: start;
+}
+
+.rrss_span {
+  padding: 20px;
+  width: 10%;
+}
+
+.rrss_img {
+  width: 50%;
+}
+
+.footer_information {
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.box-information {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.information_h4{
+  font-size: 25px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.information_link{
+  color:#4d4d4d;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.information_link:hover{
+  color:#090808;
+}
+
+.footer_legal{
+  background-color: white;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.legal_p{
+  color:blue;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.legal_p:hover{
+  color:#201e1e;
+}
+
+
